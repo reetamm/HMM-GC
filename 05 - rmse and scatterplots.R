@@ -7,9 +7,9 @@ library(psych)
 theme_set(theme_bw())
 library(sf)
 
-simFile <- 'sim_hmm_cbay_s6g3'              #MVNHMM simulation output
-copulaSimFile <- 'gammacopula'              #File generated from gammacorrels.R
-obsFile <- 'cbayJulSep0019'                 #Observation data in MVNHMM format
+simFile <- 'datafiles/sim_hmm_cbay_s6g3'              #MVNHMM simulation output
+copulaSimFile <- 'datafiles/gammacopula'              #File generated from gammacorrels.R
+obsFile <- 'datafiles/cbayJulSep0019'                 #Observation data in MVNHMM format
 date <- rep(seq(ymd('2000-07-01'), ymd('2000-09-30'), by = 'days'), 20)
 month <- month(date)
 day <- day(date)
